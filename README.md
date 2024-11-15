@@ -10,11 +10,6 @@ Problem: `src/__init__.py` contains relative imports, but `ruff check .` fails t
 ```
 PYTHON_VERSION=3.12.2
 function makenv {
-    # clean up any existing env
-    source deactivate
-    pyenv uninstall --force $1
-
-    # build new venv
     pyenv install $PYTHON_VERSION --skip-existing
     pyenv global $PYTHON_VERSION
     pyenv virtualenv $PYTHON_VERSION $1
