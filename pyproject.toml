@@ -1,0 +1,19 @@
+[build-system]
+requires = [ "poetry-core>=1.0.0",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "tmp_debug_ruff"
+version = "0.0.1"
+description = "Debugging ruff."
+authors = [ "Zach Kurtz <zkurtz@gmail.com>",]
+readme = "README.md"
+homepage = "https://github.com/zkurtz/tmp_debug_ruff"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ruff = "^0.6.3"
+
+[tool.ruff.lint.flake8-tidy-imports]
+# Disallow all relative imports.
+ban-relative-imports = "all"
