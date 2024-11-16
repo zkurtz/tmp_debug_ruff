@@ -10,7 +10,7 @@ authors = [ "Zach Kurtz <zkurtz@gmail.com>",]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-ruff = "^0.6.3"
+ruff = "^0.7.4"
 
 # exactly as shown at https://docs.astral.sh/ruff/settings/#lint_flake8-tidy-imports_ban-relative-imports:
 [tool.ruff.lint.flake8-tidy-imports]
