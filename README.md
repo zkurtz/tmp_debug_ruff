@@ -1,6 +1,4 @@
-# debugging ruff
-
-Problem: `src/__init__.py` contains relative imports, but `ruff check .` fails to raise an associated error even though the `pyproject.toml` says to ban relative imports.
+Problem: `src/__init__.py` contains relative imports, but `ruff check .` fails to raise an associated error even though the `pyproject.toml` [says to ban relative imports](https://github.com/zkurtz/tmp_debug_ruff/blob/8e5e69d966ab67d928ba7b8bcc15a06b2207cf05/pyproject.toml#L15-L17).
 
 ## Set up
 
